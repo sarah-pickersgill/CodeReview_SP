@@ -1,0 +1,13 @@
+risk,cause,group_name,group_id,RR,sex,age
+tobacco,Ischemic heart disease,Nonsmoker,1,1,Female,All
+tobacco,Ischemic heart disease,Nonsmoker,1,1,Male,All
+tobacco,Lung cancer,Nonsmoker,1,1,Female,All
+tobacco,Lung cancer,Nonsmoker,1,1,Male,All
+tobacco,Ischemic heart disease,Smoker,2,2.59,Female,All
+tobacco,Ischemic heart disease,Smoker,2,1.98,Male,All
+tobacco,Lung cancer,Smoker,2,8.43,Female,All
+tobacco,Lung cancer,Smoker,2,8.43,Male,All
+tobacco,Ischemic heart disease,Exsmoker,3,1.75,Female,All
+tobacco,Ischemic heart disease,Exsmoker,3,1.37,Male,All
+tobacco,Lung cancer,Exsmoker,3,4.3,Female,All
+tobacco,Lung cancer,Exsmoker,3,4.3,Male,All
