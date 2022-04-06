@@ -12,6 +12,7 @@ TP
 states<-matrix(c(1000,20,5,10), nrow=1)
 states
 
+
 #multiplying matrices
 states %*% TP
 #notes that if you switch the order, it's can't compute:
@@ -25,10 +26,35 @@ states<-data.frame(time=1,
                    dead.other=10)
 
 
-for (i in 1:20){
+  i<-1
   temp<-as.matrix(states[i,2:5])%*%TP
+  temp
+  states[i+1,]<-c(i+1, temp)
+  states
+  
+  i<-2
+  temp<-as.matrix(states[i,2:5])%*%TP
+  temp
+  states[i+1,]<-c(i+1, temp)
+  states
+  
+  
+  
+  states<-data.frame(time=1,
+                     well=1000,
+                     sick=20,
+                     dead=5,
+                     dead.other=10)
+  
+  
+for(i in 1:25){
+  temp<-as.matrix(states[i,2:5])%*%TP
+  temp
   states[i+1,]<-c(i+1, temp)
 }
+  
+states
+states<-states%>%mutate(check = well + sick+dead+dead.other)
 
 library(dplyr)
 plot<-states%>%gather(state, number, -time)
